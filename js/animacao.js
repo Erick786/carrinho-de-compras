@@ -35,13 +35,16 @@ titularInputAnimacoes.addEventListener("keyup", ()=>{
 });
 
 document.addEventListener("keydown", function(event){
-    if(event.key ==="4"){
-      definirCartao(novaLogoSrc);
-    }else if(event.key ==="3"){
-      definirCartao(maisUmaLogoSrc);
-    }else if(event.key === "5"){
-        definirCartao(masterLogoSrc)
-    };
+       switch(event.key){
+        case "3":
+        definirCartao(maisUmaLogoSrc);
+        break;
+        case "4":
+        definirCartao(novaLogoSrc);
+        break;
+        case "5":
+        definirCartao(masterLogoSrc);        
+       }
    
 });
 
